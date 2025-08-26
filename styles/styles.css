@@ -13,10 +13,14 @@
 /* stylelint-disable no-empty-source */
 :root, .dropin-design {
   /* Adobe Commerce Dropin design tokens */
+  --main-color-accent: #8821f4;
   --color-brand-300: #6d6d6d;
   --color-brand-500: #454545;
   --color-brand-600: #383838;
   --color-brand-700: #2b2b2b;
+  --color-brand-800: #1e1e1e;
+  --color-brand-900: #111;
+  --color-brand-1000: #000;
   --color-neutral-50: #fff;
   --color-neutral-100: #fafafa;
   --color-neutral-200: #f5f5f5;
@@ -276,14 +280,13 @@ button {
 /* links */
 a:not(.dropin-design a) {
   color: var(--color-brand-500);
-  font: var(--type-body-1-strong-font);
   letter-spacing: var(--type-body-1-strong-letter-spacing);
   text-decoration: none;
   overflow-wrap: break-word;
 }
 
 a:not(.dropin-design a):hover {
-  color: var(--color-brand-600);
+  color: var(--color-brand-1000);
   text-decoration: underline;
 }
 
@@ -368,8 +371,8 @@ main img {
 
 .icon {
   display: inline-block;
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .icon img {
@@ -379,7 +382,7 @@ main img {
 
 /* sections */
 main > .section {
-  margin: var(--spacing-xbig) 0;
+  margin: var(--spacing-xxlarge) 0;
 }
 
 .section:empty {
@@ -407,7 +410,7 @@ main .section.light,
 main .section.highlight {
   background-color: var(--color-neutral-100);
   margin: 0;
-  padding: var(--spacing-xbig) 0;
+  padding: var(--spacing-xxlarge) 0;
 }
 
 /* Base Design System Tokens */
