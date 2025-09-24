@@ -9,7 +9,21 @@ footer .footer > div {
     margin: auto;
     max-width: 1200px;
     padding: 40px 24px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+
 }
+
+
+footer .footer > div > .storeview-switcher-button {
+    display: inline-flex;
+}
+footer .footer > div > .storeview-switcher-button .storeview-switcher-button {
+    color: var(--background-color);
+}
+
 
 footer .footer p {
     margin: 0;
