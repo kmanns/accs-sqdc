@@ -3,6 +3,7 @@
     "default": {
       "commerce-core-endpoint": "https://edge-sandbox-graph.adobe.io/api/a8101baa-b235-4d8e-88c4-734e5f054b56/graphql",
       "commerce-endpoint": "https://edge-sandbox-graph.adobe.io/api/a8101baa-b235-4d8e-88c4-734e5f054b56/graphql",
+      "commerce-assets-enabled": true,
       "headers": {
         "all": {
           "Store": "citisignal_us"
