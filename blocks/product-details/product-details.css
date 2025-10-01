@@ -309,11 +309,14 @@
   .product-details__left-column {
     display: block;
     grid-column: 1 / span 6;
+    align-self: start;
+    margin-top: var(--spacing-big);
   }
   
   .product-details__right-column {
     grid-column: 7 / span 5;
-    padding-top: var(--spacing-medium);
+    align-self: start;
+    margin-top: var(--spacing-big);
   }
 
   .product-details__right-column .product-details__gallery {
