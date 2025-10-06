@@ -58,16 +58,53 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "padding",
+        "label": "Padding",
+        "options": [
+          {
+            "name": "Default",
+            "value": "default"
           },
           {
-            "component": "reference",
-            "name": "background[src]",
-            "label": "Image"
+            "name": "Small",
+            "value": "small"
           },
           {
-            "component": "richtext",
-            "name": "fancy",
-            "label": "Fancy"
+            "name": "Medium",
+            "value": "medium"
+          },
+          {
+            "name": "Large",
+            "value": "large"
+          },
+          {
+            "name": "Big",
+            "value": "big"
+          },
+          {
+            "name": "XBig",
+            "value": "xbig"
+          },
+          {
+            "name": "XXBig",
+            "value": "xxbig"
+          },
+          {
+            "name": "Huge",
+            "value": "huge"
+          },
+          {
+            "name": "XHuge",
+            "value": "xhuge"
+          },
+          {
+            "name": "XXHuge",
+            "value": "xxhuge"
           }
         ]
       }

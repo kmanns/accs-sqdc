@@ -410,8 +410,39 @@ main .section.light,
 main .section.highlight {
   background-color: var(--color-neutral-100);
   margin: 0;
-  padding: var(--spacing-xxlarge) 0;
 }
+
+main .section[data-padding="default"] {
+  padding: var(--spacing-xxsmall) 0;
+}
+main .section[data-padding="small"] {
+  padding: var(--spacing-xsmall) 0;
+}
+main .section[data-padding="medium"] {
+  padding: var(--spacing-small) 0;
+}
+main .section[data-padding="large"] {
+  padding: var(--spacing-medium) 0;
+}
+main .section[data-padding="big"] {
+  padding: var(--spacing-big) 0;
+}
+main .section[data-padding="xbig"] {
+  padding: var(--spacing-xbig) 0;
+}
+main .section[data-padding="xxbig"] {
+  padding: var(--spacing-xxbig) 0;
+}
+main .section[data-padding="huge"] {
+  padding: var(--spacing-huge) 0;
+}
+main .section[data-padding="xhuge"] {
+  padding: var(--spacing-xhuge) 0;
+}
+main .section[data-padding="xxhuge"] {
+  padding: var(--spacing-xxhuge) 0;
+}
+
 
 /* Base Design System Tokens */
 .dropin-design.dropin-design {
