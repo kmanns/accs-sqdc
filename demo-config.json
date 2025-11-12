@@ -4,6 +4,7 @@
       "commerce-core-endpoint": "https://edge-sandbox-graph.adobe.io/api/a8101baa-b235-4d8e-88c4-734e5f054b56/graphql",
       "commerce-endpoint": "https://edge-sandbox-graph.adobe.io/api/a8101baa-b235-4d8e-88c4-734e5f054b56/graphql",
       "commerce-assets-enabled": true,
+      "commerce-assets-quality": 95,
       "headers": {
         "all": {
           "Store": "citisignal_us"
@@ -28,8 +29,11 @@
         "website-id": 1,
         "website-name": "Main Website"
       },
-      "commerce-assets-enabled": true,
-      "commerce-assets-quality": 95
+      "plugins": {
+        "picker": {
+           "rootCategory": "YOUR_ROOT_CATEGORY_ID"
+         }
+      }
     },
     "/citisignal-fr/": {
       "headers": {
