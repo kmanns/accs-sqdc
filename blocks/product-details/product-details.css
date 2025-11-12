@@ -55,6 +55,25 @@
   transition: border-color 120ms ease, box-shadow 120ms ease;
 }
 
+.product-details__gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.product-details__buttons {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--grid-1-gutters);
+  grid-auto-rows: max-content;
+}
+
+.product-details__attributes {
+  margin-top: var(--spacing-xsmall);
+}
+
 .product-details__gallery:hover,
 .product-details__header:hover,
 .product-details__price:hover,
@@ -91,14 +110,6 @@
   box-shadow: 0 0 0 2px color-mix(in oklab, var(--color-brand-500) 20%, transparent);
 }
 
-.product-details__gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-}
-
 .product-details__gallery .pdp-carousel {
   max-height: 60vh;
   width: 100%;
@@ -121,6 +132,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.product-details__description img,
+.product-details__attributes img,
+.pdp-description img,
+.pdp-attributes img {
+  max-width: 100%;
+  height: auto;
 }
 
 .product-details__gallery .pdp-carousel img {
@@ -166,19 +185,8 @@
   margin-top: var(--spacing-big);
 }
 
-.product-details__buttons {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: var(--grid-1-gutters);
-  grid-auto-rows: max-content;
-}
-
 .product-details__buttons > div {
   display: contents;
-}
-
-.product-details__attributes {
-  margin-top: var(--spacing-xsmall);
 }
 
 /* Support embedded HTML in description and attributes */
@@ -212,7 +220,7 @@
 .product-details__attributes a,
 .pdp-description a,
 .pdp-attributes a {
-  color: var(--color-brand-500, #0066cc);
+  color: var(--color-brand-500, #06c);
   text-decoration: underline;
 }
 
@@ -250,16 +258,8 @@
 .pdp-description h4,
 .pdp-description h5,
 .pdp-description h6 {
-  margin: 1em 0 0.5em 0;
+  margin: 1em 0 0.5em;
   font-weight: 600;
-}
-
-.product-details__description img,
-.product-details__attributes img,
-.pdp-description img,
-.pdp-attributes img {
-  max-width: 100%;
-  height: auto;
 }
 
 .product-details__description table,
